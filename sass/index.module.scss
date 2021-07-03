@@ -1,0 +1,38 @@
+.homepage {
+    width:80%;
+    margin:auto;
+    height:auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    h1 {
+        span {
+            color:rgb(147, 147, 221);
+            
+        }
+
+       
+    }
+    h2 {
+        span {
+            color:rgb(165, 19, 19);
+        }
+    }
+}
+
+.fcontainer {
+    width:100%;
+    height:auto;
+    display:grid;
+    grid-template-columns: 33% 34% 33%;
+    div {
+        height:300px;
+        margin:10px;
+        position: relative;
+        .image {
+            object-fit:scale-down;
+            height:300px;
+           
+        
+        }
+    }
+}

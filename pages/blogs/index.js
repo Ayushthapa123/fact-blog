@@ -48,6 +48,10 @@ export default function Home({ articles }) {
                 <a>
                 
                 <h2>{article.fields.title}</h2>
+                <Image src={'https:' + article.fields.coverphoto.fields.file.url} alt='Fact Image'
+                width={article.fields.coverphoto.fields.file.details.image.width} 
+                height={article.fields.coverphoto.fields.file.details.image.height}
+                />
            
 
                 </a>

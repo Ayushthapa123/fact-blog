@@ -1,0 +1,15 @@
+.links {
+   
+        button {
+            padding:5px;
+            margin: 5px;
+            background-color: wheat;
+            a {
+                color:black;
+                text-decoration: none;
+                &:hover {
+                    cursor: pointer;
+                }
+        }
+    }
+}

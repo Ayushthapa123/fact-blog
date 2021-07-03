@@ -3,7 +3,10 @@ import Link from "next/link";
 import Image from 'next/image'
 import { createClient } from 'contentful';
 
-import styles from '../../sass/blogs.module.scss';
+import styles from '../../sass/blogsindex.module.scss'
+
+import FactTemplate from '../../components/templates/factTemplate'
+
 
 
 const client = createClient({
@@ -33,9 +36,11 @@ export default function Home({ articles }) {
   return (
     <div className='blog-list'>
       <Head>
-        <title>Blog</title>
+        <title>Fun facts</title>
     
       </Head>
+
+<FactTemplate>
 
       <main className={styles.blogs}>
    
@@ -47,8 +52,13 @@ export default function Home({ articles }) {
 
                 <a>
                 
-                <h2>{article.fields.title}</h2>
-           
+                <h2>|{article.fields.title}</h2>
+
+                <div className={styles.imgcontainer}>
+                <Image src={'https:' + article.fields.coverphoto.fields.file.url} alt='Fact Image' className={styles.image}
+                 layout='fill'
+                />
+                 </div>
 
                 </a>
               </Link> 
@@ -56,6 +66,7 @@ export default function Home({ articles }) {
           ))}
     
       </main>
+      </FactTemplate>
 
 
 

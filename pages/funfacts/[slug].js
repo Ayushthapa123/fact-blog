@@ -1,11 +1,11 @@
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { BLOCKS } from "@contentful/rich-text-types";
 import Head from 'next/head';
-import { createClient } from 'contentful'
-// import Layout from '../../components/templates/factTemplate'
+import { createClient } from 'contentful';
+import Layout from '../../components/templates/Blogtemplate';
+import styles from '../../sass/blogs.module.scss';
 
 
-import styles from '../../sass/blogs.module.scss'
 
 const client = createClient({
   space:process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID,
@@ -53,7 +53,7 @@ export default function Article({ article }) {
   <title>{article.fields.title}</title>
 </Head>
 
-
+<Layout>
 
 <div className={styles.header}>
 <h1>{article.fields.title}</h1>
@@ -85,6 +85,8 @@ export default function Article({ article }) {
 </div>
 
  </section>
+
+ </Layout>
 
 
       <style jsx>{`
