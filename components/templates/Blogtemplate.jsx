@@ -3,8 +3,9 @@ import Nav from '../Nav'
 import Social from '../social'
 
 import Links from '../../components/Links'
+import Shortorlong from '../../components/shortorlogn';
 
-import styles from '../sass/template.module.scss';
+import styles from '../sass/blogtemplate.module.scss';
 
 
 export default function Template(props) {
@@ -28,6 +29,7 @@ export default function Template(props) {
    {props.children}
    </div>
 
+<Shortorlong/>
 <Links/>
 
    

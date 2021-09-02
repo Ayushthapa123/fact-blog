@@ -1,0 +1,218 @@
+.mpb {
+    margin:0px;
+    padding:0px;
+    border-radius: 0px;
+    border:2px solid rgb(156, 115, 115);
+}
+.mp {
+    margin:0px;
+    padding: 0px;
+}
+
+.container {
+    width:100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.description {
+    width:95%;
+    margin: auto;
+    p {
+        font-size: 20px;
+    }
+}
+
+.body {
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 70% 30%;
+
+    .form {
+        width:100%;
+
+        fieldset {
+            font-size: 25px;
+        }
+    
+        form {
+
+        fieldset {
+            margin-top: 30px;
+        }
+
+        .hosteldetails {
+            width:100%;
+            height:auto;
+            display: grid;
+            grid-template-columns: 50% 50%;
+
+            input {
+                width:100%;
+                height:40px;
+                font-size: 20px;
+                @extend .mpb;  
+            }
+            select {
+                width: 100%;
+                height:40px;
+             @extend .mpb;
+            }
+    
+
+            div {
+                margin:10px;
+          
+            }
+        }
+
+        .hosteldet {
+            @extend .hosteldetails;
+        }
+
+        .contactinfo {
+
+           @extend .hosteldetails;
+
+        }
+        .nearbyplace {
+
+            @extend .hosteldetails;
+
+        }
+
+        .feeinfo {
+            @extend .hosteldetails;
+
+        }
+
+        .urls {
+            @extend .hosteldetails;
+        }
+
+
+  
+
+        .des {
+            width:100%;
+            height:180px;
+            textarea {
+                width:100%;
+                height:120px;
+                margin:0px;
+                padding: 0px;
+            }
+        }
+         .hostelimage {
+             width:100%;
+             height:100px;
+             position: relative;
+         }
+
+         .logindetails {
+             width:100%;
+             height:auto;
+             text-align: center;
+             input {
+                 width:200px;
+                 height:40px;
+                 margin:10px;
+             }
+         }
+
+
+         .submitbutton{
+            width:220px;
+            height:40px;
+               transition: 0.3s all linear 0s;
+               cursor: pointer;
+               background-color: rgb(61, 61, 51);
+               border-radius: 5px;
+               color:white;
+               font-size: 20px;
+               &:hover {
+                   background-color:black ;
+               }
+           
+           }
+
+
+
+    }
+    }
+}
+
+.services {
+    width:100%;
+    height:auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    div {
+        span {
+            font-size: 18px;
+        }
+    }
+
+}
+
+
+
+.guides {
+    padding: 10px;
+    height:95vh;
+    position: sticky;
+    top:0px;
+  
+}
+
+.addfact {
+    div{
+        input {
+            height:40px;
+            width:80%;
+        }
+       
+    }
+    section {
+        textarea {
+            height:80px;
+            width:80%;
+        }
+    }
+}
+
+
+.showfacts {
+    width:100%;
+    min-height: 100px;
+    margin-bottom: 100px;
+}
+
+
+
+
+
+@media (max-width:800px) {
+    .body {
+        grid-template-columns:100%;
+    }
+}
+
+@media (max-width:500px) {
+
+    .hosteldetails {
+        grid-template-columns:100%;
+    }
+
+    .services {
+        grid-template-columns: 100%;
+
+        div {
+            span {
+                font-size: 15px;
+            }
+        }
+
+    }
+}

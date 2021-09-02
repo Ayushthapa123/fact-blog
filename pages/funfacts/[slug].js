@@ -3,7 +3,7 @@ import { BLOCKS } from "@contentful/rich-text-types";
 import Head from 'next/head';
 import { createClient } from 'contentful';
 import Layout from '../../components/templates/Blogtemplate';
-import styles from '../../sass/blogs.module.scss';
+import styles from '../../sass/slugs.module.scss';
 
 
 

@@ -1,0 +1,43 @@
+.facts {
+    h1 {
+        font-size: 36px;
+
+    }
+    h3 {
+        font-size: 30px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color:rgb(25, 19, 83);
+    }
+    p {
+        font-size: 20px;
+        margin-top: 0px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color:rgb(41, 63, 19);
+        
+    }
+}
+
+.intro {
+    width:100%;
+    height:auto;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    .factimg {
+        img {
+            width:80%;
+            height:auto;
+            object-fit: cover;
+        }
+    }
+    .details {
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+
+        h2 {
+            font-size: 30px;
+            text-transform: capitalize;
+        }
+    }
+}

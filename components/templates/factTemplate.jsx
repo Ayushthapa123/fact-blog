@@ -4,7 +4,7 @@ import Social from '../social'
 
 import Links from '../../components/Links'
 
-import styles from '../sass/template.module.scss';
+import styles from '../sass/facttemplate.module.scss';
 
 
 export default function Template(props) {
