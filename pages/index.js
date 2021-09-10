@@ -47,6 +47,7 @@ export default function Home( {articles}) {
         <title>FactsUmbrella</title>
         <meta name="description" content="Fun facts,Amazing facts, Psychological facts" />
         <link rel="icon" href="/favicon.png" />
+        <meta name="google-site-verification" content="YHGwBPoFZZz4vmKV720TaZf4vwvLVU5lqDDIOLAgBxw" />
       </Head>
 
 
