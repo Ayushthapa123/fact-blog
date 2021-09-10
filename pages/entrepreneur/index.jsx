@@ -11,7 +11,7 @@ export default function Bworld() {
     const bitems=[];
     const db=firebase.firestore();
     
-    let ref=db.collection('facts').where("tag","==",'business');
+    let ref=db.collection('facts').where("tag","==",'entrepreneur');
     
     
       ref.onSnapshot((querySnapshot)=> {
@@ -29,9 +29,8 @@ export default function Bworld() {
     <div>
 
 <Head>
-<title>Hostels</title>
+<title>Entrepreneurs</title>
 
-{/* write article for 'search hostel',' what is hostel?' 'types of hostel'*/}
 </Head>
 <h1>Entrepreneurs</h1>
     <div className={styles.blogs}>
@@ -40,15 +39,15 @@ export default function Bworld() {
 
 
       
-          {bdata.map((hostel) => (
-            <div key={hostel.email} className={styles.links}>
-                <h3> {hostel.name}</h3>
-              <Link href={"/bworld/" + hostel.slug} >
+          {bdata.map((person) => (
+            <div key={person.email} className={styles.links}>
+                <h3> {person.name}</h3>
+              <Link href={"/entrepreneur/" + person.slug} >
                 <a>
-                  <img src={hostel.hostelImg} alt='hostel image' loading='lazy'/>
+                  <img src={person.photoUrl} alt='Image' loading='lazy'/>
                 
             
-                <span>{hostel.name}</span>
+                <span>{person.description}</span>
                 </a>
               </Link>
             </div>

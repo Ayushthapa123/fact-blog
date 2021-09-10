@@ -7,6 +7,7 @@ export default function Links() {
         <div className={styles.links}>
          
          <button><Link href='/funfacts'><a>Fun Facts</a></Link></button>
+         <button><Link href='/entrepreneur'><a>Entrepreneur Facts</a></Link></button>
        
             
         </div>

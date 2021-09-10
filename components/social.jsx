@@ -9,7 +9,7 @@ import {AiFillTwitterCircle} from 'react-icons/ai'
 export default function Social() {
     return (
         <div className={styles.social}>
-<a href='#'><RiFacebookCircleFill/></a><br/>
+<a href='https://www.facebook.com/factsumbrella/'><RiFacebookCircleFill/></a><br/>
 <a href='#'> <AiFillYoutube/></a><br/>
 <a href='#'><FaInstagramSquare/></a><br/>
 <a href='#'> <AiFillTwitterCircle/></a><br/>

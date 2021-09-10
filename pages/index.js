@@ -4,15 +4,47 @@ import Link from 'next/link'
 import Nav from '../components/Nav'
 import styles from '../sass/index.module.scss'
 
+import { createClient } from 'contentful';
+
 import Social from '../components/social'
 import Links from '../components/Links'
+import Footer from '../components/Footer';
 
 
-export default function Home() {
+
+
+
+const client = createClient({
+  space:process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID,
+  accessToken:process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN,
+
+});
+
+export async function getStaticProps() {
+  let data = await client.getEntries({
+    content_type: "facts",
+  });
+
+  return {
+    props: {
+      articles: data.items,
+    },
+    revalidate: 50,
+  };
+}
+
+
+
+
+
+
+
+export default function Home( {articles}) {
   return (
+    <>
     <div className={styles.homepage}>
       <Head>
-        <title>Fact Umbrella</title>
+        <title>FactsUmbrella</title>
         <meta name="description" content="Fun facts,Amazing facts, Psychological facts" />
         <link rel="icon" href="/favicon.png" />
       </Head>
@@ -26,6 +58,43 @@ export default function Home() {
 
 
   <h1><span>|</span>FACTS</h1>
+
+ 
+  <main className={styles.blogs}>
+   
+   {articles.map((article) => (
+     <div key={article.sys.id}>
+  
+
+       <Link href={"/facts/" + article.fields.slug}>
+
+         <a>
+         
+         <h2>|{article.fields.title}</h2>
+
+         <div className={styles.imgcontainer}>
+         {/* <Image src={'https:' + article.fields.coverphoto.fields.file.url} alt='Fact Image' className={styles.image}
+          layout='fill'
+         /> */}
+          </div>
+
+         </a>
+       </Link> 
+     </div> 
+   ))}
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
   <h2><span>|</span>Fun Facts</h2>
 
 <div className={styles.fcontainer}>
@@ -87,15 +156,9 @@ export default function Home() {
 
 </div>
 
-
-
-
-
-
-
-
-
-
     </div>
+    <Footer/>
+
+    </>
   )
 }
