@@ -48,6 +48,11 @@ export default function Home( {articles}) {
         <meta name="description" content="Fun facts,Amazing facts, Psychological facts" />
         <link rel="icon" href="/favicon.png" />
         <meta name="google-site-verification" content="YHGwBPoFZZz4vmKV720TaZf4vwvLVU5lqDDIOLAgBxw" />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9683433840347502"
+     crossorigin="anonymous"></script>
+
+
+
       </Head>
 
 
