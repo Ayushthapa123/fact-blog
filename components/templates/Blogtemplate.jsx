@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import Nav from '../Nav'
 import Social from '../social'
 
@@ -7,15 +8,21 @@ import Shortorlong from '../../components/shortorlogn';
 
 import styles from '../sass/blogtemplate.module.scss';
 
+import Footer from '../Footer'
+import Bestfacts from '../bestfacts'
 
-export default function Template(props) {
 
 
 
- 
+
+
+export default function Template(props,articles) {
 
 
     return (   
+
+<>
+
         <div className={styles.template}>
 <div>
 <Nav/>
@@ -30,10 +37,12 @@ export default function Template(props) {
    </div>
 
 <Shortorlong/>
-<Links/>
 
-   
-            {/* <Footer/> */}
+
+       
         </div>
+        <Bestfacts/>
+        <Footer/>
+        </>
     )
 }

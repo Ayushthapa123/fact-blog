@@ -1,0 +1,17 @@
+.bestfacts {
+    width:100%;
+    height:auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    div {
+        margin:20px;
+        overflow: hidden;
+        height:300px;
+        margin:10px;
+        position: relative;
+h2 {
+    color:rgb(47, 47, 77);
+}
+
+    }
+}

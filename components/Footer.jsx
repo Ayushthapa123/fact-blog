@@ -17,12 +17,9 @@ function Footer() {
 <div className='left-footer'>
 
 <h3 className='foot-title'>contact info</h3>
-<p className='foot-p'>Address</p>
-<p>Lalitpur, Kupondole, 4400</p>
 
 <hr/>
-<p className='foot-p'>Phone Number</p>
-<p>9846793894</p>
+
 <hr/>
 
 

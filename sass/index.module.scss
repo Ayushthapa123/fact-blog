@@ -57,6 +57,25 @@
 .blogs {
     width:100%;
     height:auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    div {
+        margin:20px;
+        overflow: hidden;
+        height:300px;
+        margin:10px;
+        position: relative;
+
+        .image {
+            object-fit:scale-down;
+            height:300px;
+            &:hover {
+                transform: scale(1.2);
+                transition: 0.3s all linear 0s;
+            }
+        }
+
+    }
 
 }
 
