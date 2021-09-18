@@ -3,4 +3,5 @@ module.exports = {
       domains: ['images.ctfassets.net'],
     },
     exportTrailingSlash: true,
+    // reactStrictMode:true,
   }

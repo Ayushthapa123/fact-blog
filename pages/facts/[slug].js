@@ -51,6 +51,8 @@ export default function Article({ article }) {
 
 <Head>
   <title>{article.fields.title}</title>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9683433840347502"
+     crossorigin="anonymous"></script>
 </Head>
 
 <Layout>
