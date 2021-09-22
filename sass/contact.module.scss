@@ -1,0 +1,82 @@
+.formcontainer {
+    width:70%;
+    margin:auto;
+    min-height:520px;
+    background-image: url('/contact.jpg');
+    background-size: cover;
+    color:white;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    form {
+        width:70%;
+        margin:auto;
+        height:auto;
+        text-align: center;
+        position: relative;
+        top: 25px;
+        background-color: rgb(71, 61, 107);
+        border: 5px solid rgb(163, 135, 135);
+        opacity: 0.8;
+        h1 {
+            font-size: 50px;
+        }
+        p {
+            font-size: 20px;
+        }
+        div {
+            width:70%;
+            margin: auto;
+            input,textarea {
+                width:100%;
+                margin: 0px;
+                padding: 0px;
+                border-top-style: hidden;
+                border-right-style: hidden;
+                border-left-style: hidden;
+                border-bottom-style: groove;
+                height:40px;
+                margin-top: 10px;
+                background-color: rgb(71, 61, 107);
+                font-size: 20px;
+                color:white;
+                &:focus {
+                
+                    outline: none;
+                    background-color: rgb(71, 61, 107);
+                }
+                
+            }
+
+            button {
+                width:100%;
+                height: 40px;
+                margin: 0px;
+                padding: 0px;
+                background-color: rgb(30, 34, 82);
+                color:white;
+                transition: 0.3s all linear 0s;
+                margin-bottom: 20px;
+                font-size: 20px;
+                &:hover {
+                    cursor: pointer;
+                    background-color: blueviolet;
+                }
+            }    
+        }
+    }
+}
+
+
+
+@media (max-width:600px) {
+    .formcontainer {
+        width:100%;
+        height:550px;
+        margin:0px;
+        padding:0px;
+
+        form {
+            width:90%;
+        }
+    }
+}

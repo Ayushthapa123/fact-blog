@@ -23,8 +23,11 @@ export default function Footer() {
     </div>
 <div className={styles.superfooter}>
 <hr/>
-<a href='https://www.factsumbrella.com/privacy-policy/'>Privacy Policy</a>
-<a href='https://www.factsumbrella.com/terms-and-condition/'>Tearms & Conditions</a>
+<a href='/privacy-policy/'>Privacy Policy</a>
+<a href='/terms-and-condition/'>Tearms & Conditions</a>
+<a href='/contactus/'>Contact Us</a>
+<a href='/aboutus/'>About Us</a>
+
 <hr/>
 <div className={styles.copyright}>
 <span>All copyright reserved to</span><a href='https://www.factsumbrella.com/'>@factsumbrella</a>
