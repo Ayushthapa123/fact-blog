@@ -8,6 +8,7 @@ export default function Links() {
          
          <button><Link href='/funfacts'><a>Fun Facts</a></Link></button>
          <button><Link href='/entrepreneur'><a>Entrepreneur Facts</a></Link></button>
+         <button><Link href='/businessideas'><a>Business Ideas</a></Link></button>
        
             
         </div>

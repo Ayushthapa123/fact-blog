@@ -4,6 +4,12 @@
     display: grid;
     grid-template-columns: 33% 34% 33%;
 
+    div {
+        p {
+            text-align: center;
+        }
+    }
+
 
 h2 {
     text-align: center;

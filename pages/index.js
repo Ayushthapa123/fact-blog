@@ -140,7 +140,7 @@ export default function Home({articles,articles2}) {
 
 
 
-<h2><span>|</span>Awesome Facts</h2>
+{/* <h2><span>|</span>Awesome Facts</h2>
 
 <div className={styles.fcontainer}>
 <div>
@@ -168,7 +168,7 @@ export default function Home({articles,articles2}) {
   </div>
 
 
-</div>
+</div> */}
 
     </div>
     <Footer/>
