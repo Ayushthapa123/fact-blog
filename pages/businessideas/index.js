@@ -62,7 +62,9 @@ export default function Home({ articles }) {
 
                 </a>
               </Link> 
+              <hr/>
             </div> 
+            
           ))}
     
       </main>
