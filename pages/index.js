@@ -138,38 +138,6 @@ export default function Home({articles,articles2}) {
 
 
 
-
-
-{/* <h2><span>|</span>Awesome Facts</h2>
-
-<div className={styles.fcontainer}>
-<div>
-  <Link href='/funfacts/Showers-really-do-spark-creativity'><a>
-  <Image src='/shower.png' alt='showers spark creativity' className={styles.image}
-  layout='fill'
-  />
-  </a></Link>
-  </div>
-
-  <div>
-  <Link href='/funfacts/worlds-oldest-hotel-since-705ad'><a>
-  <Image src='/hotel.png' alt='Oldest hotel' className={styles.image}
-  layout='fill'
-  />
-  </a></Link>
-  </div>
-
-  <div>
-  <Link href='/funfacts/apple-can-last-up-to-10-months'><a>
-  <Image src='/apple.png' alt='Apple can last 10 months' className={styles.image}
-  layout='fill'
-  />
-  </a></Link>
-  </div>
-
-
-</div> */}
-
     </div>
     <Footer/>
 
